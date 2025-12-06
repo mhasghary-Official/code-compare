@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-compare"
+version = "0.1.0"
+description = "Compare performance and output of C++ and Python code"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Education",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/your-username/code-compare"
+Repository = "https://github.com/your-username/code-compare"
+
+[project.scripts]
+code-compare = "code_compare.main:cli"
